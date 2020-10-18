@@ -1,139 +1,80 @@
-* {
+*{
     box-sizing: border-box;
+    margin:0px;
 }
-
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: gray;
-    font-family: sans-serif;
-}
-
-h1 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 170%;
-}
-
-h2 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 2em;
-    margin-top: 10px;
-}
-
-.head {
-    margin-top: 20px;
-}
-
-div.section {
-    background-color: pink;
-    border: #000000 solid 2px;
-    width: 90%;
-    margin: 5%;
-}
-
-.section-head h2 {
-    font-weight: normal;
-}
-
-div.section-head {
-    border-top: 0px;
-    border-right: 0px;
-    float: right;
-    text-align: center;
-    width: 100%;
-}
-
-div.section-body {
-    clear: right;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.navbar {
-    background-color: orange;
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.navbar-brand {
-    padding-left: 5%;
-}
-
-#collapsable-nav {
-    background-color: blue;
-    text-align: center;
-    border: solid 2px black;
-    font-size: 1.5em;
-}
-
-.collapse li {
-    width: 100%;
-    text-align: center;
-    border-bottom: solid 2px black;
-}
-
-.navbar-toggler {
-    margin: 15px;
-}
-
-.visible-xs {
+.visible-xs{
     visibility: hidden;
 }
-
-@media (min-width: 992px) {
-    .col-lg-4 {
-        float: left;
-        width: 33.33%;
-    }
-    .hidden-xs {
-        visibility: hidden;
-    }
-    .visible-xs {
-        visibility: hidden;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .col-md-6 {
-        float: left;
-        width: 50%;
-    }
-    .col-md-12 {
-        float: left;
-        width: 100%;
-        margin-left: -20px;
-    }
-    .col-md-12>div.section {
-        width: 95%;
-    }
-    .hidden-xs {
-        visibility: hidden;
-    }
-    .visible-xs {
-        visibility: hidden;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-    .col-sm-12 {
-        float: left;
-        width: 100%;
-    }
-    .visible-xs {
+@media (max-width: 575px){
+    .visible-xs{
         visibility: visible;
     }
+    .col-xs-12 {
+        margin: 5%;
+        width: 90%;
+    }
+}
+@media (min-width: 992px){
+    .col-lg-4 {
+        margin: 1%;
+        width: 31.33%;
+    }
+}
+@media (max-width : 991px) and (min-width: 768px){
+    .col-md-6 {
+        margin: 2%;
+        width: 46%;
+    }
+    .col-md-12 {
+        margin: 2%;
+        width: 96%;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+    .visible-xs{
+        visibility: visible;
+    }
+    .col-sm-12 {
+        margin: 4%;
+        width: 92%;
+    }
+}
+.navbar-brand{
+    margin: 15px;
+    float: left;
+    color: snow;
+    font-size: 175%;
+    font-weight: bold;
+}
+#menu{
+    background-color: snow;
+    clear: both;
+    color: blue;
+    font-size: 150%;
+    text-align: center;
+}
+#menu li{
+    border: 2px solid #343a40;
+}
+#menu li:hover :focus{
+    cursor: default;
+    text-decoration: none;
+}
+h1{
+    font-weight: bold;
+    margin: 15px;
+}
+.section{
+    float: left;
+    height: 700px;
+    color: snow;
+    background-color: #343a40;
+}
+.section h2{
+    text-align: center;
+    margin: 10px;
+    padding-top: 5px;
+}
+.section p{
+    padding: 10px;
 }
